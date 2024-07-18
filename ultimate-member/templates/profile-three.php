@@ -1,3 +1,23 @@
+/**
+ * Template for the Profile Side Menu
+ *
+ * This template can be overridden by copying it to yourtheme/ultimate-member/profile-side-menu.php
+ *
+ * Page: "Profile"
+ *
+ * Changes made:
+ * - Added custom hooks `um_profile_content_{$nav}` and `um_profile_content_{$nav}_{$subnav}` to display tabbed content dynamically.
+ * - Added new hook `um_profile_menu_after` to allow additional content to be displayed after the profile menu.
+ *
+ * @version 2.6.1
+ *
+ * @var array  $args Profile form shortcode arguments
+ * @var string $mode Profile form mode
+ * @var int    $form_id Profile form ID
+ *
+ * @see     https://docs.ultimatemember.com/article/1516-templates-map
+ * @package UltimateMember
+ */
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 /* Template: Profile Side Menu */
