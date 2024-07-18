@@ -182,8 +182,6 @@ if ( $args['template'] == 'profile-three' ) {
 							$subnav = UM()->profile()->active_subnav();
 							$subnav = ! empty( $subnav ) ? $subnav : 'default'; ?>
 
-
-
 							<div class="um-profile-body <?php echo esc_attr( $nav . ' ' . $nav . '-' . $subnav ); ?>">
 
 								<?php
@@ -299,8 +297,9 @@ if ( $args['template'] == 'profile-three' ) {
 
 						</div>
 					<?php }
-
-					do_action( 'um_profile_menu_after' ); ?>
+          
+          // New hook to display content after the profile menu
+          do_action( 'um_profile_menu_after' ); ?>
 
 					</div>
 				</div>
